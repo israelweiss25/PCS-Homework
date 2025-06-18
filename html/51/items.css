@@ -1,0 +1,26 @@
+img{
+    display: inline;
+    border-radius: 10px;
+
+}
+#image-header{
+    display: block;
+    margin: auto;
+}
+.item{
+    background-color: white;
+    margin: 5% 0% 10%;
+    border: 1px solid beige;
+    border-radius: 10px;
+    min-width: 20%;
+    width: fit-content;
+    padding-right: 2em;
+}
+p{
+    display: inline;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+

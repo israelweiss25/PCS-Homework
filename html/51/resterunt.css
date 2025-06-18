@@ -1,0 +1,61 @@
+
+body{
+    background-color: beige;
+    border: 8px solid black;
+    border-radius: 10px;
+}
+header{
+    text-align: center;
+    background-color: beige;
+    color: red;
+    margin: 10%;
+    border-bottom: 3px solid red;
+}
+img{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 248px;
+    height: 148px;
+}
+#header{
+    border-bottom: 0px;
+}
+
+
+article{
+    text-align: center;
+    color: black;
+}
+.menu-link{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    background-color: red;
+    border: 10px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5%;
+}
+.menu-link:hover{
+    color: yellow;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: brown;
+}
+
+.container-footer{
+   display: block;
+   background-color: gray;
+   text-align: center;
+   height: 50px;
+   padding-top:  40px
+   
+
+}
