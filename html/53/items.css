@@ -1,0 +1,49 @@
+section img {
+    width: 183px;
+    height: 175px;
+    border-radius: 10px;
+    float: left;
+
+}
+
+.header{
+    background-color: transparent;
+    text-align: center;
+    color: brown;
+    border-bottom: 2px solid brown;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    padding: 5%;
+
+}
+section div {
+    overflow: auto;
+}
+
+.item {
+    background-color: white;
+    margin: 5% 0% 10%;
+    border: 1px solid beige;
+    border-radius: 10px;
+    width: fit-content;
+    padding-right: 1em;
+    box-shadow: 4px 4px 4px 4px gray;
+}
+
+.item-discription {
+    float: left;
+    margin: .5em;
+    margin-bottom: 1em;
+    width: 120px;
+}
+
+.item-price {
+    float: right;
+    font-weight: bold;
+    margin: .5em 0 2em 2em;
+    font-size: 1.17em;
+
+}
+
+
