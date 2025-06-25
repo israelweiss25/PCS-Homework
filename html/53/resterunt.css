@@ -1,58 +1,52 @@
-
-body{
+body {
     background-color: beige;
     margin: 0;
     background-image: url("images/header2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    }
-header{
-    height: px;
+}
+
+.main-header {
     background-color: rgb(223, 183, 97);
-    /* color: brown; */
-    margin-bottom: 5%; 
-    border-radius: 8px;   
-    }
-header p{
+    margin-bottom: 5%;
+    border-radius: 8px;
+}
+
+.main-header p {
     display: inline-block;
     color: brown;
-    text-align: left;
-    margin-left: .5em;
-    width:  100px;
+    text-align: center;
+    margin-left: 1em;
+    width: 100px;
     font-weight: bolder;
     font-family: cursive;
 }
-header nav{
+
+.main-header nav {
     float: right;
     margin-top: 30px;
-    
+
 }
-header a{
+
+.main-header a {
     color: brown;
-    font-weight: bolder;
     margin: 0 1em 2%;
+    font-weight: bolder;
     font-family: cursive;
 
 }
-#order{
-    border: 5px solid rgba(234, 10, 10, 0.614);
-    border-radius: 5px;
-}
-.about-Us{
+
+.about-Us {
     width: 100%;
     height: 100vh;
     text-align: center;
     background-image: url("images/aboutUs.jpg");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.about-Us h2{
-    color:black;
-    padding: 30px;
-    font-size: 3em; 
-}
-.about-Us p{
+
+.about-Us p {
     margin-top: 30px;
     padding: 10px;
     color: brown;
@@ -64,40 +58,58 @@ header a{
     width: 50%;
 }
 
-.menu-link{
-    display: block;
+.header-h1 {
+    background-color: transparent;
     text-align: center;
-    border: 8px solid brown;
-    border-radius: 10px;
-    padding: 10px;
-    margin-left: 35%;
-    margin-right: 35%;
+    color: brown;
+    border-bottom: 2px solid brown;
+    margin: 0 20% 10% 20%;
+    padding: 5%;
+    font-size: 3em;
 }
-.p{
+
+.p {
     color: brown;
     text-align: center;
-} 
+}
 
-a{
+a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: white;
     text-decoration: solid;
 }
 
-
-.container-footer{
-   display: block;
-   background-color: gray;
-   text-align: center;
-   height: 50px;
-   padding-top:  40px
-   
-
+button {
+    background-color: rgb(231, 12, 12);
+    color: rgb(24, 23, 23);
+    font-weight: bolder;
+    font-family: cursive;
+    border-radius: 8px;
 }
-h1{
+
+button:hover {
+    color: white;
+}
+
+.container-footer {
+    display: block;
+    background-color: gray;
     text-align: center;
-    background-color: transparent;
+    height: 50px;
+    padding-top: 40px
+}
+
+.nav {
+    text-align: center;
+}
+
+.menu-button {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.5em;
+    margin: 5%;
 }

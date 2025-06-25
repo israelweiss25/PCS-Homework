@@ -6,17 +6,7 @@ section img {
 
 }
 
-.header{
-    background-color: transparent;
-    text-align: center;
-    color: brown;
-    border-bottom: 2px solid brown;
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-bottom: 10%;
-    padding: 5%;
 
-}
 section div {
     overflow: auto;
 }
@@ -45,5 +35,3 @@ section div {
     font-size: 1.17em;
 
 }
-
-
