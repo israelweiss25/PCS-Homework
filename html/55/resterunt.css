@@ -1,0 +1,201 @@
+body {
+    background-color: beige;
+    margin: 0;
+    padding-top: 4.7em;
+    background-image: url("images/header2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header>h1 {
+    text-align: center;
+    color: red;
+    text-shadow: 1px 1px 2px blue;
+}
+
+.main-header {
+    background-color: rgb(223, 183, 97);
+    border-radius: 8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-header p {
+    display: inline-block;
+    color: brown;
+    text-align: center;
+    margin-left: 1em;
+    width: 100px;
+    font-weight: bolder;
+    font-family: cursive;
+
+}
+
+.main-header nav {
+    /* float: right;
+    padding: 1.5em; */
+    position: absolute;
+    top: 1.5em;
+    right: 0;
+}
+
+.main-header a {
+    color: brown;
+    margin: .5em;
+    font-weight: bolder;
+    font-family: cursive;
+
+}
+
+@media(width <=600px) {
+    body {
+        padding-top: 10.8em;
+    }
+
+    .main-header {
+        text-align: center;
+    }
+
+    .main-header p {
+        display: inline-block;
+        margin: 10px;
+
+    }
+
+    .main-header nav {
+        position: static;
+    }
+
+    a {
+        display: block;
+        margin: 10px;
+    }
+
+}
+
+video {
+    margin-top: 5em;
+    width: 70%;
+    margin: 0 15%;
+}
+
+.about-Us {
+    text-align: right;
+    background-image: url("images/aboutUs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-Us article {
+    width: 50%;
+    min-height: 100%;
+    margin-left: 50%;
+    background-color: gray;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
+.about-Us p {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    color: brown;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: monospace;
+    border-radius: 8px;
+}
+
+.header-h1 {
+    background-color: transparent;
+    text-align: center;
+    color: brown;
+    border-bottom: 2px solid brown;
+    margin: 0 20% 10% 20%;
+    padding: 5%;
+    font-size: 3em;
+}
+
+.p {
+    color: brown;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: solid;
+}
+
+button {
+    background-color: rgb(231, 12, 12);
+    color: rgb(24, 23, 23);
+    font-weight: bolder;
+    font-family: cursive;
+    border-radius: 8px;
+}
+
+button:hover {
+    color: white;
+}
+
+.container-footer {
+    display: block;
+    background-color: gray;
+    text-align: center;
+    height: 50px;
+    padding-top: 40px
+}
+
+.p-data-link {
+    text-align: center;
+    color: brown;
+    font-size: 1.2em;
+}
+
+.p-data-link a {
+    margin-left: 1em;
+    text-decoration: underline;
+}
+
+.nav {
+    text-align: center;
+}
+
+.menu-button {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.5em;
+    margin: 5%;
+}
+
+form {
+    background-color: black;
+    color: white;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 1em;
+
+}
+
+/* label:last-child{
+    margin-right: 20%;
+} */
+.input {
+    min-height: 5em;
+}
+
+input[class="input-submit"] {
+    background-color: red;
+    width: 200px;
+    margin: 0 45%;
+}
