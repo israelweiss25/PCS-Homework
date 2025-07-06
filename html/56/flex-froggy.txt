@@ -35,3 +35,5 @@
     align-items: flex-end;
     align-content: space-between;
     justify-content: center;
+
+i used more flexbox in the form folder
