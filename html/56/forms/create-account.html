@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../resterunt.css">
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <p>Monsey BBQ & grill</p>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#about_link">About Us</a>
+            <a href="../contact.html">Contact Us</a>
+            <a href="../menu.html">
+                <button>Order Now</button>
+            </a>
+        </nav>
+    </header>
+    <form method="post">
+
+        <Label for="fname">First Name:
+            <input id="fname" type="text" name="fname" minlength="3">
+        </Label>
+        <Label>
+            Last Name:
+            <input type="text" name="lname" minlength="3">
+        </Label>
+
+        <Label for="date"> Date of Birth:
+            <input id="name" type="date" name="date">
+        </Label>
+        <Label for="age">Age
+            <input id="age" type="number" min="18" max="100">
+        </Label>
+        <label>
+            Gender:
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="fmale">Female
+        </label>
+        <label>
+            Tel:
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </label>
+        <label>
+            username:
+            <input type="text" name="username">
+        </label>
+        <label>password:
+            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                placeholder="enter password" name="password">
+        </label>
+        <input type="submit" name="submit" value="Create account">
+
+    </form>
+
+
+</body>
+
+</html>
