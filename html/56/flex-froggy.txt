@@ -36,4 +36,4 @@
     align-content: space-between;
     justify-content: center;
 
-i used more flexbox in the form folder
+i used more flexbox in the form folder and in the items.css file
