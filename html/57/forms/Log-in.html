@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../resterunt.css">
+    <link rel="stylesheet" href="forms.css">
+</head>
+</head>
+
+<body>
+    <header class="main-header">
+        <p>Monsey BBQ & grill</p>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#about_link">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="../menu.html">
+                <button>Order Now</button>
+            </a>
+        </nav>
+    </header>
+    <form method="post">
+        <label>
+            username:
+            <input type="text" name="username">
+        </label>
+        <label>password:
+            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                placeholder="enter password" name="password">
+        </label>
+        <input type="submit" name="submit" value="Log In">
+        <a class="a" href="create-account.html">Create Account</a>
+
+    </form>
+</body>
+
+</html>

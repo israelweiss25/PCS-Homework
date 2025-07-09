@@ -1,0 +1,42 @@
+ table{
+    width: 80%;
+    margin: auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+table{
+    background-color: gray;
+}
+thead{
+    background-color: red;
+}
+tfoot{
+    background-color: blue;
+}
+th, td{
+    border: 1px solid black;
+    /* color: white */
+}
+thead tr:nth-child(2){
+    background-color: pink;
+}
+
+td:first-child{
+    font-weight: bold;
+    text-align: left;
+}
+tbody tr:nth-child(even){
+    background-color:chocolate
+}
+tbody tr:nth-child(odd){
+    background-color: chartreuse;
+}
+tbody tr:hover, tr:hover{
+    background-color: blueviolet;
+}
+
+th[rowspan="2"]:last-child, td:last-child{
+    color: white;
+    font-family: cursive;
+} 
