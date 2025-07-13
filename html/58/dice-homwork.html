@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: grid;
+        grid-template: 
+        ' one two three ' 150px
+        ' four five six ' 150px
+        ;
+    }
+    div{
+        
+        display: grid;
+        grid-template: 
+        ' one two  ' 
+        ' middle middle'
+        ' five six ' 
+        ;
+        border: 5px solid black;
+        border-collapse: collapse;
+    }
+
+    p{
+        background-color: black;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    div:nth-child(odd) > p:nth-child(1) {
+        grid-area: middle;
+    }
+     div:nth-child(odd) > p:nth-child(2) {
+        grid-area: two;
+    }
+      div:nth-child(odd) > p:nth-child(3) {
+        grid-area: five;
+    }
+    
+
+  
+    div:nth-child(even) > p:nth-child(1){
+        grid-area: two;
+    }
+    div:nth-child(even) > p:nth-child(2){
+        grid-area: five;
+    }
+    div:nth-child(even) > p:nth-child(4){
+        grid-area: six;
+    }
+</style>
+<body>
+    <div>
+        <p>1</p>
+    </div>
+    <div>
+        <p>1</p>
+        <p>2</p>
+    </div>
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+    </div>
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+    </div>
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+    </div>
+</body>
+</html>
