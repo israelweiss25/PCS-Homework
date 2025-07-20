@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    body{
+    body {
         display: grid;
-        grid-template: 
-        ' one two three ' 150px
-        ' four five six ' 150px
+        grid-template:
+            ' one two three ' 150px
+            ' four five six ' 150px
         ;
     }
-    div{
-        
+
+    div {
         display: grid;
-        grid-template: 
-        ' one two  ' 
-        ' middle middle'
-        ' five six ' 
+        grid-template:
+            ' one two  '
+            ' middle middle'
+            ' five six '
         ;
         border: 5px solid black;
         border-collapse: collapse;
     }
 
-    p{
+    p {
         background-color: black;
         height: 40px;
         width: 40px;
@@ -33,28 +34,34 @@
         margin: auto;
         text-align: center;
     }
-    div:nth-child(odd) > p:nth-child(1) {
+
+    div:nth-child(odd)>p:nth-child(1) {
         grid-area: middle;
     }
-     div:nth-child(odd) > p:nth-child(2) {
-        grid-area: two;
-    }
-      div:nth-child(odd) > p:nth-child(3) {
-        grid-area: five;
-    }
-    
 
-  
-    div:nth-child(even) > p:nth-child(1){
+    div:nth-child(odd)>p:nth-child(2) {
         grid-area: two;
     }
-    div:nth-child(even) > p:nth-child(2){
+
+    div:nth-child(odd)>p:nth-child(3) {
         grid-area: five;
     }
-    div:nth-child(even) > p:nth-child(4){
+
+
+
+    div:nth-child(even)>p:nth-child(1) {
+        grid-area: two;
+    }
+
+    div:nth-child(even)>p:nth-child(2) {
+        grid-area: five;
+    }
+
+    div:nth-child(even)>p:nth-child(4) {
         grid-area: six;
     }
 </style>
+
 <body>
     <div>
         <p>1</p>
@@ -90,4 +97,5 @@
         <p>6</p>
     </div>
 </body>
+
 </html>

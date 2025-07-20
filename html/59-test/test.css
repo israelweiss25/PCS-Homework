@@ -1,0 +1,214 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding-top: 1.5em;
+    padding-bottom: 4em;
+}
+
+/*This is the css for the header, footer*/
+body>header:nth-child(1),
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+body>header:nth-child(1) {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+
+body>header:nth-child(1) nav,
+footer p {
+    margin: 1em 10%
+}
+
+body>header:nth-child(1) a {
+    text-decoration: none;
+    color: white
+}
+
+header:nth-child(1) a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/*The css for the ul and li are also used in the products section*/
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+/*This is the css for main*/
+main {
+    margin: 0 10%;
+
+}
+
+section {
+    padding-top: 2.5em;
+}
+
+/*This is the css for the page header*/
+.page-header {
+    background-color: grey;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 5px;
+
+}
+
+.uppercase {
+    text-transform: uppercase;
+
+}
+
+/*This is the css for the products section*/
+hr {
+    visibility: hidden;
+}
+
+.products-ul h3,
+.products-ul p {
+    text-align: center;
+}
+
+.products-ul img,
+.products-ul video {
+    width: 100%;
+}
+
+.products-ul p {
+    text-align: justify;
+}
+
+@media (width > 800px) {
+    hr {
+        visibility: visible;
+    }
+
+    .products-ul {
+        display: flex;
+
+    }
+
+    .products-ul li {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .products-ul img,
+    .products-ul video {
+        width: 100%;
+        height: 150px;
+        margin: auto;
+    }
+
+    .products-ul h3,
+    .products-ul p {
+        text-align: center;
+        font-size: small;
+    }
+
+    .products-ul p {
+        font-size: 8px;
+        text-align: justify;
+    }
+
+}
+
+/*This is the css for the form section*/
+
+.section-sign-up {
+    padding-top: 4em;
+}
+
+.sign-up-container {
+    background-color: lightgray;
+    text-align: center;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+input {
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+button {
+    border-radius: 5px;
+}
+
+@media (width>1000px) {
+    label {
+        display: inline;
+    }
+}
+
+/*This is the css for the table section*/
+
+.table-container {
+    overflow-y: auto;
+}
+
+table {
+    width: 80%;
+    min-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+}
+
+th {
+    font-weight: bold;
+}
+
+td:not(:nth-child(1)),
+tr:last-child>td {
+    text-align: right;
+}
+
+td:last-child {
+    color: red;
+}
+
+tbody tr:nth-child(even) {
+    background-color: gray;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: green;
+}
+
+tbody tr:hover {
+    background-color: blue;
+}
