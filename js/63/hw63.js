@@ -68,6 +68,6 @@ function test(x){
 
 const  message = x => console.log(x + ' is above this age group');
 
-console.log(onlyIf(numbers, test, message));
+onlyIf(numbers, test, message);
 
-console.log(numbers.filter(test).forEach(message));
+numbers.filter(test).forEach(message);
