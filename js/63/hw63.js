@@ -62,7 +62,7 @@ function onlyIf (array, tstCallback, actnCallback) {
 }
 
 function test(x){
-    return x > 40;
+    return  x > 40;
 }
 
 
