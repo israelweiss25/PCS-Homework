@@ -20,14 +20,15 @@ console.log(dayOfWeekUtills.getNumOfDay('Wednesday'));
 const interestCalculator = ( function(){
     let rate = 0;
     let years = 0;
-    let totalInterest = 0
+    let totalInterest = 0;
     return{
         setRate(num){
             return rate = num;
         },
         setYears(y){
             return years = y;
-        },        calculateInterest(principal, rate, years){
+        },        
+        calculateInterest(principal, rate, years){
             return totalInterest = principal * (rate/100) * years; 
         }
     };
