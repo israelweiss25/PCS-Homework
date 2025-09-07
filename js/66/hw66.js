@@ -12,9 +12,13 @@
         myNewButton.addEventListener('click', createButton);
     };
 
+    let clicks2 = 1;
     document.querySelector('#divParent').addEventListener('click', e => {
-        if (e.target.id === 'buttonInDiv') {
-            createButton();
+        if (e.target.className === 'buttonInDiv') {
+            const myNewButton = document.createElement('button');
+            myNewButton.textContent = ++clicks2;
+            myNewButton.className = 'buttonInDiv';
+            document.querySelector('#divParent').appendChild(myNewButton);
         };
     });
 })();
