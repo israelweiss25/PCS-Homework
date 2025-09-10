@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        table {
+            border-collapse: collapse;
+            width: 40%;
+            margin: auto;
+            margin-top: 2em;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            width: 33.33%;
+            text-align: center;
+        }
+         div:nth-child(1){
+            width: fit-content;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label>
+            color:
+            <input id="color" type="color" />
+        </label>
+        <label>
+            background color:
+            <input id="bgcolor" type="color" />
+        </label>
+    </div>
+    <hr>
+        <table id="colorList">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Color</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>not loaded</td>
+                </tr> -->
+            </tbody>
+        </table>
+    <script src="hw67.js"></script>
+</body>
+
+</html>
