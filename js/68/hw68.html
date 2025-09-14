@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>
+        message
+        <input id="msg">
+    </label>
+    <label>
+        modal
+        <input id="modal" type="checkbox">
+    </label>
+    <label>
+        buttons
+        <input id="buttonArr">
+    </label>
+    <button id="show">show</button>
+    <hr>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perferendis odio rerum maxime explicabo quos aperiam
+    quae deleniti soluta. Sint perspiciatis distinctio aut itaque at repellat temporibus debitis ea assumenda?
+    <script src="hw68.js"></script>
+    <script>
+        let clicked = true;
+        pcsMessageBox('This is a test!!!', false, false);
+
+        show.addEventListener('click', () => {
+            pcsMessageBox(msg.value, modal.checked, buttonArr.value, doStuff,removeElement);
+        });
+        function doStuff(){
+             if (clicked) {
+                let doubbliCLicked = 0;
+                this.parentElement.parentElement.style.backgroundColor = `${pickRandColor()}`;
+                this.parentElement.style.backgroundColor = `${pickRandColor()}`;
+                this.style.color = `${pickRandColor()}`;
+                this.style.fontSize = '20px'
+                clicked = false;
+
+            } else {
+                this.style.fontSize = '13.3333px';
+                clicked = true;
+            }
+        }
+        function pickRandColor() {
+            return `#${Math.floor(Math.random() * 16777216).toString(16).padStart(6, '0')}`;
+        }
+        function removeElement(){
+            this.remove();
+        };
+
+    </script>
+</body>
+
+</html>
