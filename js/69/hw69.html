@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="potus">Donald Trump</h1>
+    <label>
+        timeout:
+        <input id="timeout" placeholder="enter number in milli seconds">
+    </label>
+    <label>
+        speed of interval:
+        <input id="speed" placeholder="enter number in milli seconds">
+    </label>
+    <button id="start">start</button>
+    <h1 id="charlie">Charlie Kirk</h1>
+    <button id="show">show</button>
+
+    <script src="hw69.js"></script>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script> -->
+    <script>
+        const potus = pcs('#potus');
+        potus.css('color', 'red');
+        console.log(potus.css('color'));
+        console.log(potus.css('backgroundColor'));
+        potus.click(() => {
+            console.log('potus was clicked');
+            potus.css('bottom', 0);
+        });
+        potus.on('mouseenter', () => potus.css('fontSize', '64px'));
+        potus.on('mouseleave', () => potus.css('fontSize', '2em'));
+
+        potus.css('position', 'absolute');
+        potus.css('bottom', '75px');
+
+
+        const charlie = pcs('#charlie');
+        charlie.css('color', 'green');
+        charlie.on('dblclick', () => charlie.hide());
+        charlie.sparkle(2000);
+
+
+        const showBtn = pcs('#show');
+        showBtn.css('display', 'block');
+        showBtn.click(() => charlie.show());
+
+
+        const start = pcs('#start');
+        const timeout = pcs('#timeout')
+        const speed = pcs('#speed');
+
+        start.click(e => {
+            e.preventDefault();
+            charlie.sparkle(timeout.element.value, speed.element.value);
+        });
+    </script>
+</body>
+
+</html>
