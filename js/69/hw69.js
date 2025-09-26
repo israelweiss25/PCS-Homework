@@ -35,7 +35,7 @@ window.pcs = function (selector) {
   const element = getElement(selector);
 
   return {
-    element,
+    // element,
     css: function (property, value) {
       if (arguments.length === 1) {
         return getCss(element, property);

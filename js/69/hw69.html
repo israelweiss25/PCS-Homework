@@ -62,7 +62,7 @@
         const start = pcs('#start');
         const timeout = pcs('#timeout')
         const speed = pcs('#speed');
-
+        console.log(start,timeout);
         start.click(e => {
             e.preventDefault();
             charlie.sparkle(timeout.element.value, speed.element.value);
