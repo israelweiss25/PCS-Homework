@@ -38,8 +38,10 @@
     };
 
 
-    males.forEach(m => console.log(`Id: ${m.id} fisrt: ${m.first} last: ${m.last} gender ${m.gender} spouse: ${m.spouse.first} ${m.spouse.last} - ${m.spouse.id} `));
-    females.forEach(f => console.log(`Id: ${f.id} fisrt: ${f.first} last: ${f.last} gender ${f.gender} spouse: ${f.spouse.first} ${f.spouse.last} - ${f.spouse.id} `));
+    // males.forEach(m => console.log(`Id: ${m.id} fisrt: ${m.first} last: ${m.last} gender ${m.gender} spouse: ${m.spouse.first} ${m.spouse.last} - ${m.spouse.id} `));
+    // females.forEach(f => console.log(`Id: ${f.id} fisrt: ${f.first} last: ${f.last} gender ${f.gender} spouse: ${f.spouse.first} ${f.spouse.last} - ${f.spouse.id} `));
+    males.forEach(m => m.print());
+    females.forEach(f => f.print());
 
 
 

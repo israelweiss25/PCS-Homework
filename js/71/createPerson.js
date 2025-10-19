@@ -12,7 +12,7 @@ const createPerson = function () {
             last,
             gender,
             spouse,
-            print: function () { console.log(`Id: ${this.id} fisrt: ${first} last: ${last} gender: ${gender} `); }
+            print: function () { console.log(`Id: ${this.id} fisrt: ${first} last: ${last} gender: ${gender} spouse:  ${this.spouse.first} ${this.spouse.last} - ${this.spouse.id} `); }
         };
     };
 
