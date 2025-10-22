@@ -1,0 +1,7 @@
+[
+    { "name": "Steak", "img": "images/steak.png", "ingredients": ["steak", "salt", "pepper"]},
+    { "name": "Potatoes", "img": "images/potatoes.jpg", "ingredients": ["potatoes", "onion", "salt", "parsley"] },
+    { "name": "Salad", "img": "images/salad.jpg", "ingredients": ["lettuce", "onion", "tomato", "peppers", "craisins","dressing"] },
+    { "name": "Peas", "img": "images/peas.jpg", "ingredients": ["peas", "olive oil", "salt", "pepper", "garlick"] }
+    
+]
