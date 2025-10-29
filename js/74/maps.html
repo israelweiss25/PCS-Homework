@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        #container {
+            height: 100%;
+            text-align: center;
+        }
+
+        #map {
+            height: 80%;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        #contUsr {
+            display: block;
+            height: 1.5em;
+        }
+
+        #sidebar {
+            border: 1px solid black;
+            margin-right: 1em;
+            margin-left: 1em;
+            overflow: auto;
+
+        }
+
+        #list {
+            list-style: none;
+            padding: 1em;
+            margin: 0;
+
+        }
+
+        img {
+            float: right;
+            margin: 10px;
+        }
+
+        #pinImg {
+            border-top-left-radius: 163%;
+            border-top-right-radius: 126%;
+            border-bottom-left-radius: 0%;
+            border-bottom-right-radius: 164%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contUsr">
+        <span>Enter a location</span>
+        <input id="userInput">
+        <button id="search">search</button>
+    </div>
+
+    <div id="container">
+        <div id="sidebar">
+            <ul id="list"></ul>
+        </div>
+        <div id="map"></div>
+    </div>
+
+
+    <script>
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+            key: "AIzaSyDAdaFDW4eSFsaEj4uEf9deqnY8OZ8vUpY",
+            v: "weekly",
+        });
+    </script>
+    <script src="maps.js"></script>
+</body>
+
+</html>
