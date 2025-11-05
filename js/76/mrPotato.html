@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* display: grid;
+            grid-template-columns: 1fr 1fr 3fr; */
+        }
+
+
+        body {
+            /* height: 100%; */
+            background-image: url('images/backgroungImg.png');
+
+        }
+
+        html {}
+
+        .originImg {
+            width: 100px;
+            /* position: relative; */
+        }
+
+
+
+        #imageHolder {
+            display: inline-grid;
+            grid-template-columns: 2fr 2fr;
+            width: 20%;
+            border: solid darkblue 3px;
+            border-radius: 8px;
+        }
+
+        div {
+
+            display: inline-block;
+        }
+
+        #mrPotato {
+            width: 75px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="imageHolder">
+        <img src="images/redEyes.png" class="originImg">
+        <img src="images/blueEyes.png" class="originImg">
+        <img src="images/roundNose.png" class="originImg">
+        <img src="images/eyes.png" class="originImg">
+        <img src="images/glasses&nose.png" class="originImg">
+        <img src="images/lips.png" class="originImg">
+        <img src="images/leftEar.png" class="originImg">
+        <img src="images/rightEar.png" class="originImg">
+        <img src="images/teeth&mustash.png" class="originImg">
+        <img src="images/teeth.png" class="originImg">
+        <img src="images/mrPotatoHead.png" class="originImg" id="mrPotato">
+    </div>
+    <button id="loadBtn">load history</button>
+    <button id="clearBtn">clear history</button>
+    <button id="clearStorageBtn">clear storage</button>
+    <button id="musicBtn">play music</button>
+
+
+    <div>
+        <!-- <img src="images/mrPotatoHead.png" class="originImg" id="mrPotato"> -->
+
+    </div>
+    <audio src="audio/backgrounAudio.mp3" autoplay loop id="audio"></audio>
+    <script src="mrPotato.js"></script>
+
+</body>
+
+</html>
