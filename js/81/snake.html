@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #theCanvas {
+      display: block;
+      border: 5px solid green;
+      border-radius: 8px;
+      margin: auto;
+    }
+
+    img {
+      width: 64px;
+      height: 64px;
+    }
+
+    #play {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 100px;
+      background-color: burlywood;
+    }
+
+    #score {
+      width: 100px;
+      height: 50px;
+      position: absolute;
+      top: 15px;
+      left: 5px;
+      color: green;
+      border: 5px solid green;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="theCanvas"></canvas>
+  <!-- <script src="snake.js"></script> -->
+  <audio src="gameOver.mp3" id="gameOver"></audio>
+  <audio src="appleEaten.mp3" id="appleEaten"></audio>
+  <button id="play">play</button>
+  <!-- <spam id="score"></spam> -->
+  <p id="score">score</p>
+  <script src="snake2.js"></script>
+</body>
+
+</html>
