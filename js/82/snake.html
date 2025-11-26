@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #gameHolder {
+      display: block;
+      width: 60%;
+      margin: auto;
+    }
+
+    #gameInfo {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      margin: auto;
+      background-color: #4a752c;
+    }
+    #info{
+      display: flex;
+      justify-items: end;
+      margin-left: auto;
+      margin-right: 10px;
+    }
+    #theCanvas {
+      display: block;
+    }
+
+    img {
+      width: 64px;
+      height: 64px;
+    }
+
+    #play {
+      align-self: center;
+      width: 100px;
+      height: 25px;
+      background-color: rgb(40, 146, 30);
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+    #score {
+      color: white;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="gameHolder">
+    <div id="gameInfo">
+      <img src="images/apple2.png">
+      <p id="score">score</p>
+      <div id="info">
+        <img src="images/speaker2.png" id="speaker">
+        <!-- <img src="images/muted.png" id="muted"> -->
+      <button id="play">play</button>
+      </div>
+      
+    </div>
+    <canvas id="theCanvas"></canvas>
+  </div>
+
+
+
+  <audio src="audio/gameOver.mp3" id="gameOver"></audio>
+  <audio src="audio/appleEaten.mp3" id="appleEaten"></audio>
+  <audio src="audio/start.mp3" id="start"></audio>
+  <script src="snake2.js"></script>
+</body>
+
+</html>
