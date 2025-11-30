@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="gameHolder">
+    <div id="gameHeader">
+      <img src="src/images/apple2.png">
+      <p id="score">score</p>
+      <p id="time"></p>
+      <div id="info">
+        <img src="src/images/speaker2.png" id="speaker">
+        <button id="play">play</button>
+      </div>
+
+    </div>
+    <canvas id="theCanvas"></canvas>
+  </div>
+
+
+
+  <audio src="src/audio/gameOver.mp3" id="gameOver"></audio>
+  <audio src="src/audio/appleEaten.mp3" id="appleEaten"></audio>
+  <audio src="src/audio/start.mp3" id="start"></audio>
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
