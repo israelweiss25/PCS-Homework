@@ -1,0 +1,16 @@
+.text {
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: .5em;
+}
+
+#degrees {
+    font-size: 30px;
+}
+
+img {
+    /* position: absolute;
+    top: 1em;
+    right: 2em; */
+    margin-right: 60%;
+}
