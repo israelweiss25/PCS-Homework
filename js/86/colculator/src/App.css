@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.colcContainer {
+  width: 200px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+
+  padding-right: 0px;
+  padding-left: 0px;
+  border: 0px;
+
+}
+
+.div {
+  display: grid;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: .5em;
+}
+
+#equals {
+  background-color: blue;
+  border-radius: 3px;
+  color: white;
+}
