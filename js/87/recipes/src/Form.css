@@ -1,0 +1,23 @@
+form{
+    width: 400px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:bisque;
+}
+label{
+    display: block;
+    margin: 1em;
+}
+#add{
+    position: absolute;
+    right: 200px;
+    top: 100px;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    color: blue;
+    border-radius: 8px;
+}
