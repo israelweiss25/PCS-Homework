@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    position: sticky;
+    top:0;
+    background-color: white;
+    
+}
+#header nav{
+    display: flex;
+    width: 25%;
+    justify-content:space-evenly;
+}
+#header nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#header nav a:hover{
+    color: blue;
+}
+h1{
+    /* margin: 0 auto; */
+    position: absolute;
+    left: 50%;
+      transform: translateX(-50%);
+
+
+}
+button{
+    margin-left: auto;
+    margin-right: 1em;
+}
