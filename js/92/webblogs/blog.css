@@ -1,0 +1,115 @@
+ body {
+     text-align: center;
+     margin-left: 32px;
+     margin-right: 32px;
+     background-color: aliceblue;
+ }
+
+ #mainHolder {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     margin-top: 75px;
+ }
+
+ #blogHeader {
+     color: white;
+     margin-left: 1em;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     text-shadow: 5px 5px 10px rgb(128, 128, 128);
+ }
+
+ #blogHeader h1 {
+     font-size: 50px;
+ }
+
+ #blogHeader p {
+     font-size: 32px;
+     width: 60%;
+     text-align: justify;
+     margin-left: 1em;
+ }
+
+ hr {
+     width: 90%;
+ }
+
+ #postList {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 1em;
+     grid-auto-rows: auto;
+     list-style: none;
+ }
+
+ #topReads {
+     font-size: 20px;
+     height: 200px;
+     overflow-y: scroll;
+     list-style: none;
+     padding-left: 1em;
+     padding-bottom: 1em;
+     color: blue;
+     text-align: left;
+     margin: 0;
+ }
+
+ #topReads a {
+     text-decoration: none;
+     color: blue;
+ }
+
+ #topReads a:hover {
+     text-decoration: underline;
+     color: rgb(133, 88, 174);
+ }
+
+ .post {
+     padding: 20px 10px 20px 10px;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     background-color: rgba(23, 186, 140, 0.126);
+     border-radius: 8px;
+ }
+
+ .post img {
+     width: 250px;
+ }
+.post a {
+    color: black;
+    text-decoration: none;
+}
+.post a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+ .commentSectionHolder {
+     min-width: 300px;
+     height: 200px;
+     border-radius: 8px 8px 15px 15px;
+     background: linear-gradient(45deg in oklab, beige, white);
+     display: none;
+     z-index: 2;
+     /* display: grid; */
+     grid-template-rows: .5fr 4fr .5fr;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ .commentSection {
+     height: 125px;
+     overflow: auto;
+     list-style: decimal;
+ }
+
+ .commentSection li {
+     border: 0px solid black;
+     width: 100%;
+     height: auto;
+     border-bottom: 2px;
+ }
