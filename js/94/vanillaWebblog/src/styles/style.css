@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+   
+}
+main{
+    width: 90%;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    background-color: black;
+    height: 50px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+header p {
+    
+    justify-self: start;
+    margin-left: 30px;
+}
+
+header nav {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+nav a {
+    color: white;
+}
+#logIn{
+    height: 50%;
+    width: 100px;
+    align-self: center;
+    justify-self: end;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+ul{
+    list-style: none;
+}
+footer {
+    align-items: center;
+    background-color: grey;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1em;
+
+}
+footer div{
+    display: inline-block;
+    margin-top: 1em;
+    width: 40%;
+}
+.home {
+    text-decoration: underline;
+}
+.home:hover{
+ cursor: pointer;
+}

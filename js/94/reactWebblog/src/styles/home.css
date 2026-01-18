@@ -1,0 +1,58 @@
+main{
+    width: 80%;
+    margin: auto;
+    padding-top: 29px;
+}
+#aboutUs {
+    padding: 20px;
+}
+
+#aboutUs h1 {
+    color: rgba(20, 3, 3, 0.9);
+    font-family: sans-serif;
+    text-shadow: 5px 5px 10px  rgb(128, 128, 128);;
+    font-size: 45px;
+}
+
+#aboutUs p {
+    font-size: 25px;
+    font-family: cursive;
+    width: 55%;
+    margin: auto;
+    text-align: left;
+    color: rgb(25, 17, 138);
+}
+
+#blogs {
+    padding: 1em;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+#blogs li {
+    border-radius: 8px;
+    margin: 1em 0 2em 0;
+    width: 80%;
+    background-color: rgba(0, 149, 255, 0.329);
+    padding: 1em;
+}
+
+#blogs h3 , .postLink {
+    font-size: 25px;
+    color: black;
+}
+#blogs p{
+    font-family: cursive;
+}
+
+#blogs a:hover {
+    color: red;
+}
+.link:hover{
+    color: red;
+}
+hr{
+    width: 80%;
+}
