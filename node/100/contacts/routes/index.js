@@ -79,8 +79,7 @@ router.post('/editContact/:id', (req, res, next) => {
 });
 
 router.get('/api/contacts', (req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-
+  res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
   res.send(contacts);
 });
 module.exports = router;
