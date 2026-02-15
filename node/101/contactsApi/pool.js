@@ -2,8 +2,8 @@ import mysql from 'mysql2/promise';
 
 const pool = mysql.createPool({
   host: 'localhost',
-  user: 'nodeUser2', //process.env.SQL_USER,
-  password: 'password123', // process.env.SQL_PWD,
+  user: process.env.SQL_USER,
+  password: process.env.SQL_PWD,
   database: 'nodeuser',
   waitForConnections: true,
   connectionLimit: 10,
