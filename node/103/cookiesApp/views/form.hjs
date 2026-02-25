@@ -1,0 +1,6 @@
+<form>
+    <label>name:
+        <input name="name">
+    </label>
+    <button>submit</button>
+</form>
