@@ -1,0 +1,56 @@
+body{
+  width: 60%;
+  margin: auto;
+}
+.myBackground{
+  display: flex;
+  justify-content: end;
+}
+.myBackground p{
+  background-color: rgba(37, 180, 37, 0.683);
+}
+#messages {
+  position: relative;
+  height: 10em;
+  margin-bottom: .5em;
+  padding: 1em;
+  border-radius: 8px;
+  /* background-color: rgba(33, 158, 203, 0.39); */
+  overflow: auto;
+  /* box-sizing: border-box; */
+}
+#backgroundFormMessage{
+    background-color: rgba(33, 158, 203, 0.39);
+      border-radius: 8px;
+
+}
+
+#messageForm {
+  display: flex;
+  gap: .5em;
+ width: 80%;
+ margin: auto;
+ padding-bottom: 1em;
+ border-width: 20px;
+
+}
+
+#messageInput {
+  flex: 1;
+}
+p{
+  margin: 0;
+}
+h6{
+  margin: 0;
+  margin-bottom: .5em;
+}
+.messageBackground, .myMessage{
+  background-color: white;
+  width: fit-content;
+  min-width: 20%;
+  max-width: 45%;
+  border-radius: 8px;
+  padding: .5em;
+  margin-bottom: 1em;
+}
