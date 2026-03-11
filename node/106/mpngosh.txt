@@ -1,0 +1,106 @@
+Atlas atlas-74en4e-shard-0 [primary] test> use x
+switched to db x
+Atlas atlas-74en4e-shard-0 [primary] x> db.foo.insertOne({first: "Donald",last: "Trump"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('69b05bf6290e8143eb7c2907')
+}
+Atlas atlas-74en4e-shard-0 [primary] x> db.foo.insertMany([{first: "JD", last: "Vance"}, {first: "Benjamin", last: "Netanyahu"}])
+
+Atlas atlas-74en4e-shard-0 [primary] x> db.foo.find()
+[
+  {
+    _id: ObjectId('69b05bf6290e8143eb7c2907'),
+    first: 'Donald',
+    last: 'Trump'
+  },
+  {
+    _id: ObjectId('69b05e26290e8143eb7c2908'),
+    first: 'Mike',
+    last: 'Green'
+  },
+  {
+    _id: ObjectId('69b05e40290e8143eb7c2909'),
+    first: 'JD',
+    last: 'Vance'
+  },
+  {
+    _id: ObjectId('69b05e40290e8143eb7c290a'),
+    first: 'Benjamin',
+    last: 'Netanyahu'
+  },
+  {
+    _id: ObjectId('69b05f44290e8143eb7c290b'),
+    first: 'Mike',
+    last: 'Klein'
+  }
+]
+
+Atlas atlas-74en4e-shard-0 [primary] x> db.foo.find({first: "Mike"})
+[
+  {
+    _id: ObjectId('69b05e26290e8143eb7c2908'),
+    first: 'Mike',
+    last: 'Green'
+  },
+  {
+    _id: ObjectId('69b05f44290e8143eb7c290b'),
+    first: 'Mike',
+    last: 'Klein'
+  }
+]
+Atlas atlas-74en4e-shard-0 [primary] x> db.foo.findOne({first: "Mike"})
+{
+  _id: ObjectId('69b05e26290e8143eb7c2908'),
+  first: 'Mike',
+  last: 'Green'
+}
+
+Atlas atlas-74en4e-shard-0 [primary] x> db.foo.find({first: "Mike"}, {first: 1})
+[
+  { _id: ObjectId('69b05e26290e8143eb7c2908'), first: 'Mike' },
+  { _id: ObjectId('69b05f44290e8143eb7c290b'), first: 'Mike' }
+]
+
+Atlas atlas-74en4e-shard-0 [primary] x> db.foo.find({first: "Mike"}).sort({last: -1})
+[
+  {
+    _id: ObjectId('69b05f44290e8143eb7c290b'),
+    first: 'Mike',
+    last: 'Klein'
+  },
+  {
+    _id: ObjectId('69b05e26290e8143eb7c2908'),
+    first: 'Mike',
+    last: 'Green'
+  }
+]
+
+Atlas atlas-74en4e-shard-0 [primary] x> db.foo.find().sort({last: -1})
+[
+  {
+    _id: ObjectId('69b05e40290e8143eb7c2909'),
+    first: 'JD',
+    last: 'Vance'
+  },
+  {
+    _id: ObjectId('69b05bf6290e8143eb7c2907'),
+    first: 'Donald',
+    last: 'Trump'
+  },
+  {
+    _id: ObjectId('69b05e40290e8143eb7c290a'),
+    first: 'Benjamin',
+    last: 'Netanyahu'
+  },
+  {
+    _id: ObjectId('69b05f44290e8143eb7c290b'),
+    first: 'Mike',
+    last: 'Klein'
+  },
+  {
+    _id: ObjectId('69b05e26290e8143eb7c2908'),
+    first: 'Mike',
+    last: 'Green'
+  }
+]
